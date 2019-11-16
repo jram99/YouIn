@@ -12,14 +12,15 @@ import com.example.youin.databinding.FragmentSignUpBinding
 /**
  * A simple [Fragment] subclass.
  */
-class signUpFragment : Fragment() {
+class SignUpFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentSignUpBinding>(inflater,
-                        R.layout.fragment_title2,container,false)
+                        R.layout.fragment_sign_up,container,false)
+
         return binding.root
     }
 
