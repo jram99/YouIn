@@ -9,4 +9,9 @@
     <string name="username_text">Enter Your Username</string>
     <string name="password_text">Enter Your Password</string>
     <string name="youin_logo">YouIn Logo</string>
+    <string name="sign_up_for_youin">Sign up for YouIn</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="confirm_your_password">Confirm Your Password</string>
+    <string name="create_my_account">Create My Account</string>
 </resources>

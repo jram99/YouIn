@@ -7,24 +7,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.findNavController
-import com.example.youin.databinding.FragmentTitle2Binding
+import com.example.youin.databinding.FragmentSignUpBinding
 
 /**
  * A simple [Fragment] subclass.
  */
-class TitleFragment : Fragment() {
+class signUpFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding = DataBindingUtil.inflate<FragmentTitle2Binding>(inflater, R.layout.fragment_title2,container,false)
-
-        binding.makeAccount.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_titleFragment_to_signUpFragment)
-        }
-
+        val binding = DataBindingUtil.inflate<FragmentSignUpBinding>(inflater,
+                        R.layout.fragment_title2,container,false)
         return binding.root
     }
 
