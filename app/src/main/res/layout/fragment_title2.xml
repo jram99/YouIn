@@ -32,6 +32,7 @@
             android:layout_marginRight="25sp"
             android:background="@drawable/rounded_corner"
             android:clickable="false"
+            android:fontFamily="@font/galada"
             android:gravity="center"
             android:text="@string/welcome_text"
             android:textAlignment="center"

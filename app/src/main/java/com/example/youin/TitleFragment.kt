@@ -25,6 +25,14 @@ class TitleFragment : Fragment() {
             view.findNavController().navigate(R.id.action_titleFragment_to_signUpFragment)
         }
 
+        binding.button.setOnClickListener { view: View ->
+            var username = binding.username.text
+            var password = binding.password.text
+            if(username.isNotEmpty() and password.isNotEmpty()) {
+                view.findNavController().navigate(R.id.action_titleFragment_to_mainFeedFragment)
+            }
+        }
+
         return binding.root
     }
 

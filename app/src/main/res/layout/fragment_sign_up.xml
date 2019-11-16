@@ -32,6 +32,7 @@
             android:layout_marginRight="25sp"
             android:background="@drawable/rounded_corner"
             android:clickable="false"
+            android:fontFamily="@font/galada"
             android:gravity="center"
             android:text="Sign Up for You In"
             android:textAlignment="center"
