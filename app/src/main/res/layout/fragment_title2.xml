@@ -1,19 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#333232"
+        android:orientation="vertical"
         tools:context=".TitleFragment">
 
         <!-- TODO: Update blank fragment layout -->
-        <TextView
+
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment" />
+            android:layout_height="149dp"
+            android:layout_marginTop="25sp"
+            android:contentDescription="@string/youin_logo"
+            android:forceDarkAllowed="false"
+            android:padding="15dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="25sp"
+            android:background="@drawable/rounded_corner"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/welcome_text"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/username_text"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#039BE5" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/password_text"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#039BE5" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/login_button" />
+
+        <Button
+            android:id="@+id/makeAccount"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/sign_up" />
+
 
     </LinearLayout>
 </layout>
