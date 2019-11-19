@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "641900380178",
+    "firebase_url": "https://android-poster-application.firebaseio.com",
+    "project_id": "android-poster-application",
+    "storage_bucket": "android-poster-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:641900380178:android:02b806818ee5090d3e98cb",
+        "android_client_info": {
+          "package_name": "com.example.youin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "641900380178-bqo9o76ilvdtivhru8d8tcdgsgm7jb1m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSj1Wl4UdCznhpATfK-TlnZHChCBgnogU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "641900380178-bqo9o76ilvdtivhru8d8tcdgsgm7jb1m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
