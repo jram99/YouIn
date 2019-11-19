@@ -38,5 +38,17 @@
         android:id="@+id/mainFeedFragment"
         android:name="com.example.youin.MainFeedFragment"
         android:label="fragment_main_feed"
-        tools:layout="@layout/fragment_main_feed" />
+        tools:layout="@layout/fragment_main_feed" >
+        <action
+            android:id="@+id/action_mainFeedFragment_to_careerFairFragment"
+            app:destination="@id/careerFairFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/careerFairFragment"
+        android:name="com.example.youin.CareerFairFragment"
+        android:label="CareerFairFragment" />
 </navigation>

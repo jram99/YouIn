@@ -8,6 +8,7 @@ android {
     dataBinding {
         enabled = true
     }
+    android.defaultConfig.vectorDrawables.useSupportLibrary = true
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {

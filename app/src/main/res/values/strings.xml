@@ -16,4 +16,8 @@
     <string name="create_my_account">Create My Account</string>
     <string name="feed_welcome_text">Welcome to YouIn</string>
     <string name="feed_text">YouIn?</string>
+    <string name="test_description">This is a test description for the first image</string>
+    <string name="career_fair_header">Grove City College Career Fair</string>
+    <string name="where_text">Where: Grove City College PLC</string>
+    <string name="career_fair_when">When: October 9th, 12:00 - 5:00 PM</string>
 </resources>
