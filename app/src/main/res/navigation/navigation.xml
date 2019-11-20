@@ -46,9 +46,21 @@
             app:exitAnim="@anim/nav_default_pop_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_createNewPost"
+            app:destination="@id/createNewPost" />
     </fragment>
     <fragment
         android:id="@+id/careerFairFragment"
         android:name="com.example.youin.CareerFairFragment"
         android:label="CareerFairFragment" />
+    <fragment
+        android:id="@+id/createNewPost"
+        android:name="com.example.youin.CreateNewPost"
+        android:label="fragment_create_new_post"
+        tools:layout="@layout/fragment_create_new_post" >
+        <action
+            android:id="@+id/action_createNewPost_to_mainFeedFragment"
+            app:destination="@id/mainFeedFragment" />
+    </fragment>
 </navigation>

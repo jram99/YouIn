@@ -28,6 +28,10 @@ class MainFeedFragment : Fragment() {
             view.findNavController().navigate(R.id.action_mainFeedFragment_to_careerFairFragment)
         }
 
+        binding.floatingActionButton.setOnClickListener {view: View ->
+            view.findNavController().navigate(R.id.action_mainFeedFragment_to_createNewPost)
+        }
+
         return binding.root
     }
 

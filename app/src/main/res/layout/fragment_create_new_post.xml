@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:orientation="vertical"
+        tools:context=".CreateNewPost">
+
+        <Button
+            android:id="@+id/createNewPost"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"
+            android:text="@string/add_event_photo" />
+
+        <EditText
+            android:id="@+id/eventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/add_event_title"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#039BE5" />
+
+        <EditText
+            android:id="@+id/eventTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/add_event_time"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#039BE5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="@string/add_event_date"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="#039BE5"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/eventDateButton"
+                android:text="@string/add_event_date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <Spinner
+            android:id="@+id/eventLocation"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:background="@color/gray"
+            android:hint="@string/add_event_title"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#039BE5" />
+
+
+    </LinearLayout>
+
+</layout>
+
+
