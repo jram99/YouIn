@@ -46,6 +46,8 @@ dependencies {
 
     //Add the firebase SDK for Google Analytics
     implementation 'com.google.firebase:firebase-analytics:17.2.1'
+    //dependencies for a navigation
+    implementation "com.google.android.material:material:$supportlibVersion"
 }
 
 apply plugin: 'com.google.gms.google-services'
