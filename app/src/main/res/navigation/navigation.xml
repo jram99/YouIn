@@ -66,4 +66,8 @@
             android:id="@+id/action_createNewPost_to_mainFeedFragment"
             app:destination="@id/mainFeedFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.youin.AboutFragment"
+        android:label="AboutFragment" />
 </navigation>

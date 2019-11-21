@@ -25,4 +25,7 @@
     <string name="add_event_date">--/--/----</string>
     <string name="add_event_date_button">CHANGE DATE</string>
     <string name="add_event_time">Event Time</string>
+    <string name="about">About</string>
+    <string name="signUp">Sign Up for You In</string>
+    <string name="aboutPageImage">image</string>
 </resources>

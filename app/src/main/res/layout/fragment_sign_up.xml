@@ -25,20 +25,8 @@
 
         <TextView
             android:id="@+id/signUp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_marginLeft="25sp"
-            android:layout_marginRight="25sp"
-            android:background="@drawable/rounded_corner"
-            android:clickable="false"
-            android:fontFamily="@font/galada"
-            android:gravity="center"
-            android:text="Sign Up for You In"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            style="@style/YouInStyle"
+            android:text="@string/signUp" />
 
         <EditText
             android:id="@+id/enterEmail"
