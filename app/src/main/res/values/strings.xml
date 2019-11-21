@@ -22,7 +22,7 @@
     <string name="career_fair_when">When: October 9th, 12:00 - 5:00 PM</string>
     <string name="add_event_photo">Upload Poster</string>
     <string name="add_event_title">Event Title</string>
-    <string name="add_event_date">--/--/--</string>
+    <string name="add_event_date">--/--/----</string>
     <string name="add_event_date_button">CHANGE DATE</string>
     <string name="add_event_time">Event Time</string>
 </resources>
