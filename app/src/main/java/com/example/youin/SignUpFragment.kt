@@ -9,15 +9,19 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.youin.databinding.FragmentSignUpBinding
+import com.google.firebase.auth.FirebaseAuth
 
 /**
  * A simple [Fragment] subclass.
  */
 class SignUpFragment : Fragment() {
 
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?
-    ): View? {
+                              savedInstanceState: Bundle?): View? {
+
+
+
         // Inflate the layout for this fragment
         val binding = DataBindingUtil.inflate<FragmentSignUpBinding>(inflater,
                         R.layout.fragment_sign_up,container,false)
@@ -28,6 +32,7 @@ class SignUpFragment : Fragment() {
 
         return binding.root
     }
+
 
 
 }

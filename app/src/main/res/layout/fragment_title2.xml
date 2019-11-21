@@ -61,7 +61,7 @@
             android:textColor="#039BE5" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonSignIn"
             android:layout_width="223dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -70,7 +70,7 @@
             android:text="@string/login_button" />
 
         <Button
-            android:id="@+id/makeAccount"
+            android:id="@+id/buttonMakeAccount"
             android:layout_width="285dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
