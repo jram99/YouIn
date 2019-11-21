@@ -49,6 +49,9 @@
         <action
             android:id="@+id/action_mainFeedFragment_to_createNewPost"
             app:destination="@id/createNewPost" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_titleFragment"
+            app:destination="@id/titleFragment" />
     </fragment>
     <fragment
         android:id="@+id/careerFairFragment"

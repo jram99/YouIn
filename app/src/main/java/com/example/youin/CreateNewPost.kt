@@ -23,10 +23,8 @@ import java.util.*
 class CreateNewPost : Fragment() {
 
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?): View? {
 
 
         val binding = DataBindingUtil.inflate<FragmentCreateNewPostBinding>(inflater,
