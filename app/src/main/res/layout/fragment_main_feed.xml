@@ -32,7 +32,7 @@
                 android:layout_height="80dp"
                 android:background="?selectableItemBackgroundBorderless"
                 android:scaleType="fitXY"
-                app:srcCompat="@mipmap/poster"
+                android:src="@mipmap/ic_launcher"
                 android:layout_margin="15sp"
                 android:contentDescription="@string/youin_logo"
                 android:forceDarkAllowed="false"
@@ -103,7 +103,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription2"
@@ -121,7 +121,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription3"
@@ -139,7 +139,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription4"
@@ -157,7 +157,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription5"
@@ -175,7 +175,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription6"
@@ -193,7 +193,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription7"
@@ -211,7 +211,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription8"
@@ -229,7 +229,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription9"
@@ -247,7 +247,7 @@
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/poster" />
+                    android:src="@mipmap/ic_launcher" />
 
                 <TextView
                     android:id="@+id/testDescription10"

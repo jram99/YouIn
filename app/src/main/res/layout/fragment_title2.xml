@@ -20,7 +20,7 @@
             android:background="?selectableItemBackgroundBorderless"
             android:scaleType="fitXY"
             android:layout_gravity="center"
-            app:srcCompat="@mipmap/poster"
+            android:src="@mipmap/ic_launcher"
             android:layout_marginTop="25sp"
             android:contentDescription="@string/youin_logo"
             android:forceDarkAllowed="false"
