@@ -3,12 +3,14 @@ package com.example.youin
 
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.youin.databinding.FragmentCreateNewPostBinding
 import java.util.*
@@ -21,7 +23,6 @@ import java.util.*
 class CreateNewPost : Fragment() {
 
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,18 +32,20 @@ class CreateNewPost : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentCreateNewPostBinding>(inflater,
             R.layout.fragment_create_new_post,container,false)
 
+
         val c = Calendar.getInstance()
         val year = c.get(Calendar.YEAR)
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        binding.eventDateButton.setOnClickListener {view: View ->
-            Log.println(Log.WARN, "ISSUE!", "I got here")
-            val dpd = DatePickerDialog(view!!.context, DatePickerDialog.OnDateSetListener {
+        binding.eventDateButton.setOnClickListener {
+            Toast.makeText(activity,"Rocking",
+                Toast.LENGTH_SHORT).show()
+
+            val dpd = DatePickerDialog(activity!!, DatePickerDialog.OnDateSetListener {
                     view, year, monthOfYear, dayOfMonth ->
                 binding.eventDate.text = ("$dayOfMonth/$monthOfYear/$year")
             }, year, month, day)
-
             dpd.show()
         }
 
@@ -74,7 +77,7 @@ class CreateNewPost : Fragment() {
 
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_create_new_post, container, false)
+        return binding.root
     }
 
 }
