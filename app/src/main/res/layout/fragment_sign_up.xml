@@ -71,7 +71,7 @@
             android:textColor="#039BE5" />
 
         <Button
-            android:id="@+id/confirmAccount"
+            android:id="@+id/buttonConfirmAccount"
             android:layout_width="223dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

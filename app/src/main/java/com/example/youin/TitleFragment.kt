@@ -34,13 +34,10 @@ class TitleFragment : Fragment() {
             view.findNavController().navigate(R.id.action_titleFragment_to_signUpFragment)
         }
 
-        binding.buttonSignIn.setOnClickListener { view: View ->
-            var username = binding.username.text.toString()
-            var password = binding.password.text.toString()
-            createAccount(username, password)
-            if(username.isNotEmpty() and password.isNotEmpty()) {
-                view.findNavController().navigate(R.id.action_titleFragment_to_mainFeedFragment)
-            }
+        binding.buttonSignIn.setOnClickListener {
+            val username = binding.username.text.toString()
+            val password = binding.password.text.toString()
+            signIn(username, password)
         }
 
         return binding.root
@@ -54,27 +51,30 @@ class TitleFragment : Fragment() {
     }
 
     private fun updateUI(user: FirebaseUser?){
+        if (user != null){
+            this.view?.findNavController()?.navigate(R.id.action_titleFragment_to_mainFeedFragment)
+        }
 
     }
 
-    private fun createAccount(email: String, password: String) {
-        // [START create_user_with_email]
-        auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener { task ->
-                    if(task.isSuccessful){
-                        //Sign in success, update UI with the signed-in user's information
+    private fun signIn(email: String, password: String) {
+        auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener{ task ->
+                    if (task.isSuccessful) {
+                        // Sign in success, update UI with the signed-in user's information
                         val user = auth.currentUser
                         updateUI(user)
-                    }
-                    else {
-                        //If sign in fails, let user know
-                        /*Toast.makeText(R.layout.fragment_title2, "Authentication failed.",
-                                Toast.LENGTH_SHORT).show()*/
+                    } else {
+                        // If sign in fails, display a message to the user.
+                        Toast.makeText(activity, "Authentication failed.",
+                                Toast.LENGTH_SHORT).show()
                         updateUI(null)
                     }
 
                 }
     }
+
+
 
 
 
