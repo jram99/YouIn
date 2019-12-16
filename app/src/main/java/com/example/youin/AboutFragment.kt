@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.youin.databinding.FragmentAboutBinding
 import com.example.youin.databinding.FragmentAboutBindingImpl
 
@@ -23,7 +24,13 @@ class AboutFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentAboutBinding>(inflater,
             R.layout.fragment_about,container,false)
+
+        binding.Map.setOnClickListener { view: View? ->
+            view?.findNavController()?.navigate(R.id.action_aboutFragment_to_mapsActivity)
+        }
         return binding.root
+
+
 
     }
 

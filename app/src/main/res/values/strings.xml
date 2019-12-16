@@ -28,4 +28,9 @@
     <string name="about">About</string>
     <string name="signUp">Sign Up for You In</string>
     <string name="aboutPageImage">image</string>
+    <string name="authors_names">Created by Jacob Dybas, Nic Grube, Sam Mendheim and Jacob Ramseyer</string>
+    <string name="myMap">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">Map</string>
+    <string name="welcome_to_the_map">Welcome to the map.</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.example.youin
 
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.youin.databinding.FragmentMainFeedBinding
 import com.example.youin.databinding.FragmentSignUpBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -20,6 +23,7 @@ import com.google.firebase.auth.FirebaseUser
 class MainFeedFragment : Fragment() {
 
     private lateinit var auth: FirebaseAuth
+    lateinit var listsRecyclerView: RecyclerView
     var numClicks = 0
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -51,7 +55,12 @@ class MainFeedFragment : Fragment() {
 
             }
         }
-
+        //1
+        listsRecyclerView = binding.listsRecyclerview
+        //2
+        listsRecyclerView.layoutManager = LinearLayoutManager(this.activity)
+        //3
+        listsRecyclerView.adapter = ListSelectionRecyclerViewAdapter()
         return binding.root
     }
 

@@ -69,5 +69,19 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.youin.AboutFragment"
-        android:label="AboutFragment" />
+        android:label="AboutFragment" >
+        <action
+            android:id="@+id/action_aboutFragment_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.youin.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.youin.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
 </navigation>

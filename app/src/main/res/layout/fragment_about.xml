@@ -22,5 +22,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about" />
+
+        <TextView
+            android:id="@+id/authors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/authors_names" />
+
+        <Button
+            android:id="@+id/Map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/map" />
     </LinearLayout>
 </layout>

@@ -8,16 +8,21 @@
         android:layout_height="match_parent"
         android:background="@drawable/gradient_two"
         android:orientation="vertical"
-        tools:context=".MainFeedFragment">
+        tools:context=".MainFeedFragment"
+        android:id="@+id/linearLayout">
 
         <!-- TODO: Update blank fragment layout -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/gradient"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:layout_conversion_absoluteHeight="110dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
 
-<!--            <ImageView
+            <!--            <ImageView
                 android:id="@+id/feedImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -30,13 +35,12 @@
                 android:id="@+id/buttonSignOut"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:background="?selectableItemBackgroundBorderless"
-                android:scaleType="fitXY"
-                android:src="@mipmap/ic_launcher"
                 android:layout_margin="15sp"
+                android:background="?selectableItemBackgroundBorderless"
                 android:contentDescription="@string/youin_logo"
                 android:forceDarkAllowed="false"
-                />
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/feedWelcomeText"
@@ -52,7 +56,6 @@
                 android:textStyle="bold" />
 
 
-
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/floatingActionButton"
                 android:layout_width="wrap_content"
@@ -66,199 +69,257 @@
         </LinearLayout>
 
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_margin="20sp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/testImage1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="250sp"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    app:srcCompat="@drawable/career_fair" />
+        <ImageView
+            android:id="@+id/testImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="466dp"
+            android:contentDescription="@string/youin_logo"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/career_fair"
+            tools:layout_conversion_absoluteHeight="250dp"
+            tools:layout_conversion_absoluteWidth="341dp"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="766dp" />
 
                 <TextView
                     android:id="@+id/testDescription1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
-
-                <TextView
-                    android:id="@+id/testDescription2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="@string/test_description"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    tools:layout_conversion_absoluteHeight="19dp"
+                    tools:layout_editor_absoluteY="1031dp"
+                    tools:layout_editor_absoluteX="20dp"
+                    tools:layout_conversion_absoluteWidth="371dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lists_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_conversion_absoluteHeight="622dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="110dp" />
 
 
-                <ImageView
-                    android:id="@+id/testImage3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
+        <!--                <ImageView-->
+<!--                    android:id="@+id/testImage2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="1065dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
 
-                <TextView
-                    android:id="@+id/testDescription3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
-
-                <TextView
-                    android:id="@+id/testDescription4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="1152dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
 
 
-                <ImageView
-                    android:id="@+id/testImage5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/testImage3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="1186dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
 
-                <TextView
-                    android:id="@+id/testDescription5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
-
-                <TextView
-                    android:id="@+id/testDescription6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="1273dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
 
 
-                <ImageView
-                    android:id="@+id/testImage7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/testImage4"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="1307dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
 
-                <TextView
-                    android:id="@+id/testDescription7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
-
-                <TextView
-                    android:id="@+id/testDescription8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription4"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="1394dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
 
 
-                <ImageView
-                    android:id="@+id/testImage9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/testImage5"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="1427dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
 
-                <TextView
-                    android:id="@+id/testDescription9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription5"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="1514dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
 
 
-                <ImageView
-                    android:id="@+id/testImage10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    android:src="@mipmap/ic_launcher" />
+<!--                <ImageView-->
+<!--                    android:id="@+id/testImage6"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="1548dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
 
-                <TextView
-                    android:id="@+id/testDescription10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription6"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="1635dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
 
-            </LinearLayout>
 
-        </ScrollView>
+<!--                <ImageView-->
+<!--                    android:id="@+id/testImage7"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="1669dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription7"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="1756dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/testImage8"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="1790dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription8"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="1877dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/testImage9"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="1910dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription9"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="1997dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
+
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/testImage10"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:contentDescription="@string/youin_logo"-->
+<!--                    android:forceDarkAllowed="false"-->
+<!--                    android:src="@mipmap/ic_launcher"-->
+<!--                    tools:layout_conversion_absoluteHeight="72dp"-->
+<!--                    tools:layout_editor_absoluteY="2031dp"-->
+<!--                    tools:layout_editor_absoluteX="170dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="72dp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/testDescription10"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/test_description"-->
+<!--                    android:textAlignment="center"-->
+<!--                    tools:layout_conversion_absoluteHeight="19dp"-->
+<!--                    tools:layout_editor_absoluteY="2118dp"-->
+<!--                    tools:layout_editor_absoluteX="20dp"-->
+<!--                    tools:layout_conversion_absoluteWidth="371dp" />-->
+
+
+
+
 
 
     </LinearLayout>
