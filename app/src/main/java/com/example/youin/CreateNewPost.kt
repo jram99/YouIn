@@ -4,16 +4,19 @@ package com.example.youin
 
 import android.app.DatePickerDialog
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat.checkSelfPermission
 import androidx.databinding.DataBindingUtil
 import com.example.youin.databinding.FragmentCreateNewPostBinding
 import java.util.*
+import java.util.jar.Manifest
 
 
 
@@ -36,14 +39,27 @@ class CreateNewPost : Fragment() {
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
-        binding.eventDateButton.setOnClickListener {
-            Toast.makeText(activity,"Rocking",
-                Toast.LENGTH_SHORT).show()
+        binding.uploadImage.setOnClickListener {
+            val intent = Intent(Intent.ACTION_GET_CONTENT);
+            intent.type = "image/*";
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 1)
+        }
 
-            val dpd = DatePickerDialog(activity!!, DatePickerDialog.OnDateSetListener {
-                    view, year, monthOfYear, dayOfMonth ->
-                binding.eventDate.text = ("$dayOfMonth/$monthOfYear/$year")
-            }, year, month, day)
+        binding.eventDateButton.setOnClickListener {
+            Toast.makeText(
+                activity, "Rocking",
+                Toast.LENGTH_SHORT
+            ).show()
+
+            val dpd = DatePickerDialog(
+                activity!!,
+                DatePickerDialog.OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
+                    binding.eventDate.text = ("$dayOfMonth/$monthOfYear/$year")
+                },
+                year,
+                month,
+                day
+            )
             dpd.show()
         }
 
