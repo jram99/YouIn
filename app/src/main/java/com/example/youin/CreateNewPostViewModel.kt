@@ -5,6 +5,6 @@ import androidx.lifecycle.ViewModel
 class CreateNewPostViewModel : ViewModel() {
     var eventDate = "--/--/----"
     var eventTime = "--: --: AM/PM"
-    var newPoster = ""
+    var newPoster = "hello"
 
 }

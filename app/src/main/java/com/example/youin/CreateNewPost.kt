@@ -4,17 +4,22 @@ package com.example.youin
 
 import android.app.DatePickerDialog
 import android.content.Intent
+import android.graphics.Bitmap
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.core.net.toUri
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.findNavController
 import com.example.youin.databinding.FragmentCreateNewPostBinding
+import com.example.youin.databinding.FragmentMainFeedBinding
 import kotlinx.android.synthetic.main.fragment_create_new_post.*
+import java.io.File
 import java.util.*
 import androidx.databinding.adapters.NumberPickerBindingAdapter.setValue
 import com.google.firebase.database.DatabaseReference
@@ -61,6 +66,10 @@ class CreateNewPost : Fragment() {
             spinner.adapter = adapter
 
 
+        }
+
+        binding.newPost.setOnClickListener {
+            view!!.findNavController().navigate(R.id.action_createNewPost_to_mainFeedFragment)
         }
 
         binding.eventTimeButton.setOnTimeChangedListener { _, hour, minute -> var hour = hour
@@ -143,8 +152,9 @@ class CreateNewPost : Fragment() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-            newPoster.setImageURI(data?.data)
+            binding.newPoster.setImageURI(data?.data)
             viewModel.newPoster = data?.data.toString()
+            Toast.makeText(context,viewModel.newPoster, Toast.LENGTH_SHORT).show()
     }
 
     override fun onResume() {
@@ -152,8 +162,6 @@ class CreateNewPost : Fragment() {
         binding.eventDate.text = viewModel.eventDate
         binding.eventTime.text = viewModel.eventTime
         binding.newPoster.setImageURI(viewModel.newPoster.toUri())
-
-
 
     }
 

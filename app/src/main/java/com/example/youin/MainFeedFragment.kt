@@ -8,7 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.net.toUri
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -26,6 +28,10 @@ class MainFeedFragment : Fragment() {
     //Firebase authentication stuff
     private lateinit var auth: FirebaseAuth
 
+    private lateinit var  viewModelNewPost: CreateNewPostViewModel
+
+    private lateinit var binding : FragmentMainFeedBinding
+
 
     var numClicks = 0
 
@@ -36,13 +42,13 @@ class MainFeedFragment : Fragment() {
         auth = FirebaseAuth.getInstance()
 
         // Inflate the layout for this fragment
-        val binding = DataBindingUtil.inflate<FragmentMainFeedBinding>(inflater,
+        binding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_main_feed,container,false)
 
+        viewModelNewPost = ViewModelProviders.of(this).get(CreateNewPostViewModel::class.java)
 
-      //binding.testImage1.setOnClickListener { view: View ->
-        //    view.findNavController().navigate(R.id.action_mainFeedFragment_to_careerFairFragment)
-        //}
+
+
 
         binding.testImage1.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_mainFeedFragment_to_careerFairFragment)
@@ -51,7 +57,6 @@ class MainFeedFragment : Fragment() {
         binding.testImage2.setOnClickListener {view: View ->
             view.findNavController().navigate(R.id.action_mainFeedFragment_to_homecomingFragment)
         }
-
 
         //button action for creating new post
         binding.floatingActionButton.setOnClickListener {view: View ->
@@ -67,8 +72,8 @@ class MainFeedFragment : Fragment() {
         }
 
 
-        binding.buttonSignOut.setOnClickListener{view: View ->
-/*            if (numClicks == 1){
+        binding.buttonSignOut.setOnClickListener{
+            if (numClicks == 1){
                 signOut()
             }
             else{
@@ -76,8 +81,7 @@ class MainFeedFragment : Fragment() {
                 Toast.makeText(activity, "Click Again to Sign Out",
                         Toast.LENGTH_SHORT).show()
 
-            }*/
-            view.findNavController().navigate(R.id.action_mainFeedFragment_to_account)
+            }
         }
 
         return binding.root
@@ -98,5 +102,14 @@ class MainFeedFragment : Fragment() {
         }
 
     }
+
+    override fun onResume() {
+        super.onResume()
+
+        binding.emptyImage.setImageURI(viewModelNewPost.newPoster.toUri())
+        Toast.makeText(context,viewModelNewPost.eventTime,Toast.LENGTH_SHORT).show()
+    }
+
+
 
 }

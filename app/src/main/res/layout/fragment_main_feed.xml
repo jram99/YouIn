@@ -143,6 +143,19 @@
                     tools:layout_editor_absoluteX="170dp"
                     tools:layout_editor_absoluteY="1186dp" />
 
+                <ImageView
+                    android:id="@+id/emptyImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200sp"
+                    android:layout_margin="25sp"
+                    android:forceDarkAllowed="false"
+                    tools:layout_conversion_absoluteHeight="72dp"
+                    tools:layout_conversion_absoluteWidth="72dp"
+                    tools:layout_editor_absoluteX="170dp"
+                    tools:layout_editor_absoluteY="1186dp" />
+
+
+
             </LinearLayout>
         </ScrollView>
 
