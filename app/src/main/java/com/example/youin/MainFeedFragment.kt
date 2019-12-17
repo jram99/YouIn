@@ -16,6 +16,7 @@ import com.example.youin.databinding.FragmentMainFeedBinding
 import com.example.youin.databinding.FragmentSignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.list_selection_view_holder.view.*
 
 /**
  * A simple [Fragment] subclass.
@@ -48,6 +49,7 @@ class MainFeedFragment : Fragment() {
         binding.floatingActionButton.setOnClickListener {view: View ->
             view.findNavController().navigate(R.id.action_mainFeedFragment_to_createNewPost)
         }
+
 
         binding.buttonSignOut.setOnClickListener{
             if (numClicks == 1){
