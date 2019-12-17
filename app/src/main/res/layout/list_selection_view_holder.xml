@@ -10,31 +10,9 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@drawable/gradient">
 
-
-        <TextView
-            android:id="@+id/itemNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp" />
-
-        <TextView
-            android:id="@+id/itemString"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp" />
-
-        <TextView
-            android:id="@+id/testDescription1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/test_description"
-            android:textAlignment="center"
-            tools:layout_conversion_absoluteHeight="19dp"
-            tools:layout_conversion_absoluteWidth="371dp"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="1031dp" />
 
         <ImageView
             android:id="@+id/testImage1"
@@ -42,11 +20,25 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/youin_logo"
             android:forceDarkAllowed="false"
-            app:srcCompat="@drawable/career_fair"
-            tools:layout_conversion_absoluteHeight="250dp"
-            tools:layout_conversion_absoluteWidth="341dp"
-            tools:layout_editor_absoluteX="35dp"
-            tools:layout_editor_absoluteY="766dp" />
+            app:srcCompat="@drawable/career_fair" />
+
+        <ImageView
+            android:id="@+id/homecomingImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/youin_logo"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/homecoming" />
+
+        <ImageView
+            android:id="@+id/edcampimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/youin_logo"
+            android:forceDarkAllowed="false"
+            app:srcCompat="@drawable/edcamp" />
+
+
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

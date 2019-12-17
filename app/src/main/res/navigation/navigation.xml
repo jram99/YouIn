@@ -52,6 +52,18 @@
         <action
             android:id="@+id/action_mainFeedFragment_to_titleFragment"
             app:destination="@id/titleFragment" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_homecomingFragment"
+            app:destination="@id/homecomingFragment" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_edcampFragment"
+            app:destination="@id/edcampFragment" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_humeFragment"
+            app:destination="@id/humeFragment" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_commencementFragment"
+            app:destination="@id/commencementFragment" />
     </fragment>
     <fragment
         android:id="@+id/careerFairFragment"
@@ -84,4 +96,20 @@
         android:name="com.example.youin.MapsActivity"
         android:label="activity_maps"
         tools:layout="@layout/activity_maps" />
+    <fragment
+        android:id="@+id/homecomingFragment"
+        android:name="com.example.youin.homecomingFragment"
+        android:label="homecomingFragment" />
+    <fragment
+        android:id="@+id/edcampFragment"
+        android:name="com.example.youin.edcampFragment"
+        android:label="edcampFragment" />
+    <fragment
+        android:id="@+id/humeFragment"
+        android:name="com.example.youin.humeFragment"
+        android:label="humeFragment" />
+    <fragment
+        android:id="@+id/commencementFragment"
+        android:name="com.example.youin.commencementFragment"
+        android:label="commencementFragment" />
 </navigation>
