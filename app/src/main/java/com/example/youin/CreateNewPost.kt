@@ -2,21 +2,21 @@ package com.example.youin
 
 
 
+import android.app.Activity.RESULT_OK
 import android.app.DatePickerDialog
+
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.os.Build
 import android.os.Bundle
+
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.content.ContextCompat.checkSelfPermission
 import androidx.databinding.DataBindingUtil
 import com.example.youin.databinding.FragmentCreateNewPostBinding
+import kotlinx.android.synthetic.main.fragment_create_new_post.*
 import java.util.*
-import java.util.jar.Manifest
 
 
 
@@ -39,10 +39,11 @@ class CreateNewPost : Fragment() {
         val month = c.get(Calendar.MONTH)
         val day = c.get(Calendar.DAY_OF_MONTH)
 
+
+
         binding.uploadImage.setOnClickListener {
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
-            intent.type = "image/*"
-            startActivityForResult(Intent.createChooser(intent, "Select Picture"), 1)
+            pickImageFromGallery()
+
         }
 
         binding.eventDateButton.setOnClickListener {
@@ -62,8 +63,6 @@ class CreateNewPost : Fragment() {
             )
             dpd.show()
         }
-
-
 
 /*
         val dateSetListener =
@@ -92,6 +91,17 @@ class CreateNewPost : Fragment() {
 
         // Inflate the layout for this fragment
         return binding.root
+    }
+
+    private fun pickImageFromGallery() {
+        val intent = Intent(Intent.ACTION_GET_CONTENT);
+        intent.type = "image/*";
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), 1)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+            newPoster.setImageURI(data?.data)
     }
 
 }
