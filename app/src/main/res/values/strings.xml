@@ -25,4 +25,9 @@
     <string name="add_event_date">--/--/----</string>
     <string name="add_event_date_button">CHANGE DATE</string>
     <string name="add_event_time">Event Time</string>
+    <string name="homecoming_text">Grove City College Homecoming 2019</string>
+    <string name="homecoming_when">When: September 30 - October 5</string>
+    <string name="homecoming_header">Grove City College Homecoming</string>
+    <string name="swim_where">Where: Grove City College Athletic Pool</string>
+    <string name="when_swim">When: Sometime</string>
 </resources>

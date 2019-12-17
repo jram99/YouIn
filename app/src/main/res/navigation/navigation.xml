@@ -49,6 +49,12 @@
         <action
             android:id="@+id/action_mainFeedFragment_to_createNewPost"
             app:destination="@id/createNewPost" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_homecomingFragment"
+            app:destination="@id/homecomingFragment" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_swimFragment"
+            app:destination="@id/swimFragment" />
     </fragment>
     <fragment
         android:id="@+id/careerFairFragment"
@@ -63,4 +69,13 @@
             android:id="@+id/action_createNewPost_to_mainFeedFragment"
             app:destination="@id/mainFeedFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/homecomingFragment"
+        android:name="com.example.youin.homecomingFragment"
+        android:label="fragment_homecoming"
+        tools:layout="@layout/fragment_homecoming" />
+    <fragment
+        android:id="@+id/swimFragment"
+        android:name="com.example.youin.swimFragment"
+        android:label="swimFragment" />
 </navigation>

@@ -73,157 +73,28 @@
                     android:forceDarkAllowed="false"
                     app:srcCompat="@drawable/career_fair" />
 
-                <TextView
-                    android:id="@+id/testDescription1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
 
                 <ImageView
                     android:id="@+id/testImage2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200sp"
                     android:layout_gravity="center"
                     android:layout_margin="15sp"
+                    android:background="@android:color/transparent"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
+                    app:srcCompat="@drawable/homecoming" />
 
 
                 <ImageView
                     android:id="@+id/testImage3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="200sp"
                     android:layout_gravity="center"
                     android:layout_margin="15sp"
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
-
-                <ImageView
-                    android:id="@+id/testImage9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="15sp"
-                    android:contentDescription="@string/youin_logo"
-                    android:forceDarkAllowed="false"
-                    app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
-
+                    app:srcCompat="@drawable/swim" />
 
                 <ImageView
                     android:id="@+id/testImage10"
@@ -234,13 +105,6 @@
                     android:contentDescription="@string/youin_logo"
                     android:forceDarkAllowed="false"
                     app:srcCompat="@mipmap/ic_launcher_round" />
-
-                <TextView
-                    android:id="@+id/testDescription10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/test_description"
-                    android:textAlignment="center" />
 
             </LinearLayout>
 
