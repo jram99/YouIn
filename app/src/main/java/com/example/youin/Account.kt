@@ -28,12 +28,16 @@ class Account : Fragment() {
         savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
 
+
+
         auth = FirebaseAuth.getInstance()
 
         val binding = DataBindingUtil.inflate<FragmentAccountBinding>(
             inflater,
             R.layout.fragment_account, container, false
         )
+
+        binding.foodView.loadUrl("https://grovecity.cafebonappetit.com/")
 
         binding.signoutButton.setOnClickListener { view ->
             if (numClicks == 1) {
