@@ -40,8 +40,8 @@ class CreateNewPost : Fragment() {
         val day = c.get(Calendar.DAY_OF_MONTH)
 
         binding.uploadImage.setOnClickListener {
-            val intent = Intent(Intent.ACTION_GET_CONTENT);
-            intent.type = "image/*";
+            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            intent.type = "image/*"
             startActivityForResult(Intent.createChooser(intent, "Select Picture"), 1)
         }
 
