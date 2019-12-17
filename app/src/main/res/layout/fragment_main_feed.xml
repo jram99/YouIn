@@ -68,8 +68,17 @@
 
         </LinearLayout>
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lists_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <ImageView
+    </LinearLayout>
+
+</layout>
+
+
+<!--        <ImageView
             android:id="@+id/testImage1"
             android:layout_width="wrap_content"
             android:layout_height="466dp"
@@ -90,16 +99,9 @@
                     tools:layout_conversion_absoluteHeight="19dp"
                     tools:layout_editor_absoluteY="1031dp"
                     tools:layout_editor_absoluteX="20dp"
-                    tools:layout_conversion_absoluteWidth="371dp" />
+                    tools:layout_conversion_absoluteWidth="371dp" />-->
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/lists_recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout_conversion_absoluteHeight="622dp"
-            tools:layout_conversion_absoluteWidth="411dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="110dp" />
+
 
 
         <!--                <ImageView-->
@@ -322,6 +324,3 @@
 
 
 
-    </LinearLayout>
-
-</layout>
