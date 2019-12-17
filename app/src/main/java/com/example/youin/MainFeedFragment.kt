@@ -72,16 +72,8 @@ class MainFeedFragment : Fragment() {
         }
 
 
-        binding.buttonSignOut.setOnClickListener{
-            if (numClicks == 1){
-                signOut()
-            }
-            else{
-                numClicks++
-                Toast.makeText(activity, "Click Again to Sign Out",
-                        Toast.LENGTH_SHORT).show()
-
-            }
+        binding.buttonSignOut.setOnClickListener{view: View ->
+            view.findNavController().navigate(R.id.action_mainFeedFragment_to_account)
         }
 
         return binding.root
