@@ -40,9 +40,9 @@ class MainFeedFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentMainFeedBinding>(inflater,
             R.layout.fragment_main_feed,container,false)
 
-/*        binding.testImage1.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_mainFeedFragment_to_careerFairFragment)
-        }*/
+      //binding.testImage1.setOnClickListener { view: View ->
+        //    view.findNavController().navigate(R.id.action_mainFeedFragment_to_careerFairFragment)
+        //}
 
         //button action for creating new post
         binding.floatingActionButton.setOnClickListener {view: View ->
