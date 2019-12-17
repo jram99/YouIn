@@ -19,7 +19,7 @@ class ListSelectionRecyclerViewAdapter : RecyclerView.Adapter<ListSelectionViewH
     }
 
     override fun onBindViewHolder(holder: ListSelectionViewHolder, position: Int) {
-        holder.listPosition.text = (position + 1).toString()
-        holder.listTitle.text = listTitles[position]
+        //holder.listPosition.text = (position + 1).toString()
+        //holder.listTitle.text = listTitles[position]
     }
 }
