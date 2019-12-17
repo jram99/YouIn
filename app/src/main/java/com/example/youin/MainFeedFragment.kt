@@ -26,8 +26,6 @@ class MainFeedFragment : Fragment() {
     //Firebase authentication stuff
     private lateinit var auth: FirebaseAuth
 
-    //Recycler View Stuff
-    lateinit var listsRecyclerView: RecyclerView
 
     var numClicks = 0
 
@@ -41,13 +39,25 @@ class MainFeedFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentMainFeedBinding>(inflater,
             R.layout.fragment_main_feed,container,false)
 
-/*        binding.testImage1.setOnClickListener { view: View ->
+        binding.testImage1.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_mainFeedFragment_to_careerFairFragment)
-        }*/
+        }
+
+        binding.testImage2.setOnClickListener {view: View ->
+            view.findNavController().navigate(R.id.action_mainFeedFragment_to_homecomingFragment)
+        }
 
         //button action for creating new post
         binding.floatingActionButton.setOnClickListener {view: View ->
             view.findNavController().navigate(R.id.action_mainFeedFragment_to_createNewPost)
+        }
+
+        binding.humeImageMain.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_mainFeedFragment_to_humeFragment)
+        }
+
+        binding.commencementImageMain.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_mainFeedFragment_to_commencementFragment)
         }
 
 
@@ -62,12 +72,6 @@ class MainFeedFragment : Fragment() {
 
             }
         }
-        //1
-        listsRecyclerView = binding.listsRecyclerview
-        //2
-        listsRecyclerView.layoutManager = LinearLayoutManager(this.activity)
-        //3
-        listsRecyclerView.adapter = ListSelectionRecyclerViewAdapter()
 
         return binding.root
     }
