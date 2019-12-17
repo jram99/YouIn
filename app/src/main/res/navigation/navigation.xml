@@ -67,6 +67,9 @@
         <action
             android:id="@+id/action_mainFeedFragment_to_account"
             app:destination="@id/account" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_foodGrades"
+            app:destination="@id/foodGrades" />
     </fragment>
     <fragment
         android:id="@+id/careerFairFragment"
@@ -123,5 +126,14 @@
         <action
             android:id="@+id/action_account_to_titleFragment"
             app:destination="@id/titleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodGrades"
+        android:name="com.example.youin.FoodGrades"
+        android:label="fragment_food_grades"
+        tools:layout="@layout/fragment_food_grades" >
+        <action
+            android:id="@+id/action_foodGrades_to_mainFeedFragment"
+            app:destination="@id/mainFeedFragment" />
     </fragment>
 </navigation>

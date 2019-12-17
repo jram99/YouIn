@@ -54,14 +54,14 @@
                 android:layout_weight="1"
                 android:text="@string/sign_out" />
 
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
 
         </LinearLayout>
-
-        <WebView
-            android:id="@+id/foodView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
 
     </LinearLayout>
 </layout>

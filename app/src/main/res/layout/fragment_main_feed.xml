@@ -42,8 +42,9 @@
                 android:scaleType="fitXY"
                 android:src="@android:drawable/ic_menu_manage" />
 
-            <TextView
-                android:id="@+id/feedWelcomeText"
+
+            <Button
+                android:id="@+id/buttonFoodGrades"
                 android:layout_width="155dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -53,8 +54,8 @@
                 android:text="@string/feed_text"
                 android:textAlignment="center"
                 android:textSize="24sp"
-                android:textStyle="bold" />
-
+                android:textStyle="bold"
+                android:background="@android:color/transparent"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/floatingActionButton"

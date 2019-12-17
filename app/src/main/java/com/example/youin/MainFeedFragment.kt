@@ -76,13 +76,11 @@ class MainFeedFragment : Fragment() {
             view.findNavController().navigate(R.id.action_mainFeedFragment_to_account)
         }
 
-        return binding.root
-    }
+        binding.buttonFoodGrades.setOnClickListener{view : View ->
+            view.findNavController().navigate(R.id.action_mainFeedFragment_to_foodGrades)
+        }
 
-    private fun signOut() {
-        auth.signOut()
-        numClicks = 0
-        updateUI(null)
+        return binding.root
     }
 
     private fun updateUI(user: FirebaseUser?){

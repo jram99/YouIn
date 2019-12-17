@@ -37,7 +37,7 @@ class Account : Fragment() {
             R.layout.fragment_account, container, false
         )
 
-        binding.foodView.loadUrl("https://grovecity.cafebonappetit.com/")
+        //binding.foodView.loadUrl("https://grovecity.cafebonappetit.com/")
 
         binding.signoutButton.setOnClickListener { view ->
             if (numClicks == 1) {

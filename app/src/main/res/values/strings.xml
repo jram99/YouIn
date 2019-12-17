@@ -42,6 +42,9 @@
     <string name="notifications">Notifications:</string>
     <string name="private_account">Private Account:</string>
     <string name="sign_out">Sign Out</string>
+    <string name="assignments">Assignments</string>
+    <string name="food">Food</string>
+    <string name="back_to_main_feed">Back to Main Feed</string>
 
     <string-array name="Locations">
         <item>Carnegie</item>
