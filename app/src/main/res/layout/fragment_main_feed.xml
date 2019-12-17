@@ -40,7 +40,7 @@
                 android:contentDescription="@string/youin_logo"
                 android:forceDarkAllowed="false"
                 android:scaleType="fitXY"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@android:drawable/ic_menu_manage" />
 
             <TextView
                 android:id="@+id/feedWelcomeText"

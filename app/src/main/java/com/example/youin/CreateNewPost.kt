@@ -16,6 +16,11 @@ import androidx.lifecycle.ViewModelProviders
 import com.example.youin.databinding.FragmentCreateNewPostBinding
 import kotlinx.android.synthetic.main.fragment_create_new_post.*
 import java.util.*
+import androidx.databinding.adapters.NumberPickerBindingAdapter.setValue
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+
+
 
 
 
@@ -27,8 +32,12 @@ class CreateNewPost : Fragment() {
     private lateinit var  binding: FragmentCreateNewPostBinding
     private lateinit var viewModel: CreateNewPostViewModel
 
+
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
+
+
 
 
         binding = DataBindingUtil.inflate(inflater,
@@ -46,7 +55,7 @@ class CreateNewPost : Fragment() {
 
         val locations = resources.getStringArray(R.array.Locations)
 
-        var spinner = binding.eventLocation
+        val spinner = binding.eventLocation
         if (spinner != null) {
             val adapter = ArrayAdapter(activity!!, android.R.layout.simple_spinner_item, locations)
             spinner.adapter = adapter
@@ -70,7 +79,7 @@ class CreateNewPost : Fragment() {
                 val hour = if (hour < 10) "0" + hour else hour
                 val min = if (minute < 10) "0" + minute else minute
 
-                var msg = "$hour : $min $am_pm"
+                val msg = "$hour : $min $am_pm"
                 viewModel.eventTime = msg
                 binding.eventTime.text = msg
                 binding.eventTime.visibility = ViewGroup.VISIBLE

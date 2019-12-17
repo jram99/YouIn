@@ -64,6 +64,9 @@
         <action
             android:id="@+id/action_mainFeedFragment_to_commencementFragment"
             app:destination="@id/commencementFragment" />
+        <action
+            android:id="@+id/action_mainFeedFragment_to_account"
+            app:destination="@id/account" />
     </fragment>
     <fragment
         android:id="@+id/careerFairFragment"
@@ -112,4 +115,13 @@
         android:id="@+id/commencementFragment"
         android:name="com.example.youin.commencementFragment"
         android:label="commencementFragment" />
+    <fragment
+        android:id="@+id/account"
+        android:name="com.example.youin.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_account_to_titleFragment"
+            app:destination="@id/titleFragment" />
+    </fragment>
 </navigation>
